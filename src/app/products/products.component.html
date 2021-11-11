@@ -1,0 +1,20 @@
+<h2>PRODUCTS</h2>
+<ul class="products">
+    <li *ngFor="let product of products">
+        <a routerLink="detail/{{product.id}}">
+            <span class="badge">{{product.id}}</span> {{product.name}}
+        </a>
+    </li>
+</ul>
+
+
+<!--
+    <label for="name"><b>Product name: </b></label>
+    <input id="name" [(ngModel)]="selectedProduct.name" placeholder="name">
+    <label for="description"><b>Product description: </b></label>
+    <input id="description" [(ngModel)]="selectedProduct.description" placeholder="description">
+    <label for="price"><b>Product price: </b></label>
+    <input id="price" [(ngModel)]="selectedProduct.price" placeholder="price">
+
+    <br>
+-->
